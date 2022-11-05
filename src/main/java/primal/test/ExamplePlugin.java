@@ -1,4 +1,4 @@
-package com.example;
+package primal.test;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,7 +14,8 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "test123"
+
 )
 public class ExamplePlugin extends Plugin
 {
@@ -41,7 +42,7 @@ public class ExamplePlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Cool story bro " + config.greeting(), null);
 		}
 	}
 
